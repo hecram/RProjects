@@ -1,0 +1,8 @@
+def create_train_input_fn(): 
+    return tf.estimator.inputs.pandas_input_fn(
+        x=x_train,
+        y=y_train, 
+        batch_size=20,
+        num_epochs=16, 
+        shuffle=True)
+        
